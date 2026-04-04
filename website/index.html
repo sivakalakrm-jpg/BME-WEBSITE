@@ -1,0 +1,212 @@
+.slide:nth-child(1){
+    background-image:url('college.jpg');
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVCE - Biomedical Engineering</title>
+
+<style>
+body {
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* HEADER WITH LOGO */
+header {
+    background: rgba(10,61,98,0.9);
+    color:white;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.logo {
+    width:70px;
+}
+
+/* NAVBAR */
+nav {
+    background:#1e5f74;
+    padding:12px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+nav a {
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover {
+    color:#ffd32a;
+}
+
+/* HERO BACKGROUND */
+.hero {
+    height:90vh;
+    background:url('college.jpg') no-repeat center/cover;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+/* DARK OVERLAY */
+.hero::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+/* TEXT ABOVE OVERLAY */
+.hero-text {
+    position:relative;
+    z-index:1;
+}
+
+section {
+    padding:50px;
+}
+
+/* CARDS */
+.card {
+    background:white;
+    padding:15px;
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.card:hover {
+    transform:scale(1.05);
+}
+
+/* GALLERY */
+.gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+.gallery img {
+    width:100%;
+    border-radius:10px;
+}
+
+/* CONTACT MAP */
+iframe {
+    width:100%;
+    height:300px;
+    border:0;
+}
+
+/* FOOTER */
+footer {
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg" class="logo">
+    <div>
+        <h2>Annai Vailankanni College of Engineering</h2>
+        <p>Biomedical Engineering Department</p>
+    </div>
+</header>
+
+<nav>
+<a href="#welcome">Welcome</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#labs">Labs</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="welcome">
+    <div class="hero-text">
+        <h1>Welcome to AVCE Biomedical Engineering</h1>
+        <p>Innovating Healthcare Through Technology</p>
+    </div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>The Biomedical Engineering Department at AVCE provides advanced education and research in healthcare technologies.</p>
+</section>
+
+<section id="courses">
+<h2>Courses</h2>
+
+<div class="card">Medical Physics</div>
+<div class="card">Biosciences</div>
+<div class="card">Fundamentals of Electronic Devices and Circuits</div>
+<div class="card">Anatomy and Human Physiology</div>
+<div class="card">Sensors and Measurements</div>
+<div class="card">Biomedical Instrumentation</div>
+<div class="card">Bio Signal Processing</div>
+<div class="card">Diagnostic and Therapeutic Equipment</div>
+<div class="card">Biomaterials</div>
+<div class="card">Neural Engineering</div>
+<div class="card">Biomedical Optics and Biophotonics</div>
+<div class="card">Electric Circuit Analysis</div>
+<div class="card">Bio Control Systems</div>
+
+</section>
+
+<section id="labs">
+<h2>Laboratories</h2>
+
+<div class="card">Bio Sciences Lab</div>
+<div class="card">Anatomy Lab</div>
+<div class="card">Diagnostic and Therapeutic Equipment Lab</div>
+<div class="card">Sensors and Measurement Lab</div>
+<div class="card">Embedded and IoMT Lab</div>
+<div class="card">EDC Lab</div>
+
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+
+<div class="gallery">
+<img src="college.jpg">
+<img src="college.jpg">
+<img src="college.jpg">
+<img src="college.jpg">
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: bme@avce.edu.in</p>
+<p>Phone: +91 XXXXX XXXXX</p>
+
+<iframe src="https://maps.google.com/maps?q=Annai%20Vailankanni%20College%20of%20Engineering&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</section>
+
+<footer>
+<p>© 2026 AVCE Biomedical Engineering Department</p>
+</footer>
+
+</body>
+</html>
